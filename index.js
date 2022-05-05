@@ -2,7 +2,7 @@
 const { hash } = window.location
 
 //show secret message
-const message = (atob(hash.replace('#', ''))
+const message = (atob(hash.replace('#', '')))
 
 if (message) {
     document.querySelector('#message-form').classList.add('hide')

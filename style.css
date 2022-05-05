@@ -4,6 +4,17 @@ header {
     text-align: center;
 }
 
+
+
 p {
     text-align: center;
 }
+
+.card-panel {
+    margin-top: 10vh;
+}
+
+button {
+    background-color: #f44336 !important; 
+}
+

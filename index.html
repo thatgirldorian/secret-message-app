@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Kurios - Secret Message App</title>
 </head>
 <body>
@@ -15,10 +15,16 @@
     <p>Send secret messages to your crush!</p>
     <div class="row">
         <div class="col s8 offset-s2">
-            <div class="card-panel">
+            <div id="message-form" class="card-panel active">
                 <form>
                     <label>Enter a secret message</label>
                     <input id="message-input" />
+                    <style>
+                        #message-input:focus {
+                            border-bottom: 1px solid #f44336 !important; 
+                            box-shadow: 0 1px 0 0 #f44336;
+                        }
+                    </style>
                     <button class="btn" type="submit">Send
                         <i class="material-icons right">send</i>
                     </button>
@@ -26,7 +32,7 @@
             </div>
 
 
-            <div>
+            <div id="link-form" class="card-panel hide">
                 <p>Share this link with your friends!</p>
                 <input id="link-input" />
             </div>

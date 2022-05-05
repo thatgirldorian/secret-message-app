@@ -1,3 +1,16 @@
+//convert the hashed value back into a string by first destructuring it
+const { hash } = window.location
+
+//show secret message
+const message = (atob(hash.replace('#', ''))
+
+if (message) {
+    document.querySelector('#message-form').classList.add('hide')
+    document.querySelector('#message-show').classList.remove('hide')
+
+    document.querySelector('h1').innerHTML = message
+}
+
 //handle message submission
 document.querySelector('form').addEventListener('submit', event => {
     //run a function every time the form is submitted

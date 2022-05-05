@@ -20,7 +20,4 @@
 https://secret-message-app-sandy.vercel.app/
 
 <h3>Screenshot:</h3>
-
-
-
-
+<img width="1220" alt="Screen Shot 2022-05-06 at 1 39 36 AM" src="https://user-images.githubusercontent.com/40691059/167030108-c00af4da-7678-435e-b529-81e7c15cd5a0.png">
